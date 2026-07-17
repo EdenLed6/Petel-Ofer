@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "הפטל של עופר",
+    "tagline": "משק ביידר · קטיף פירות יער וקפה בנתיב העשרה",
+    "language": "he",
+    "direction": "rtl",
+    "wordpressUrl": "https://petelofer.wordpress.com"
+  },
+  "contact": {
+    "phone": "054-300-6053",
+    "phoneUri": "tel:0543006053",
+    "whatsapp": "https://wa.me/972543006053",
+    "email": "morbaider@gmail.com",
+    "waze": "https://waze.com/ul?q=הפטל של עופר נתיב העשרה",
+    "location": "מושב נתיב העשרה, חוף אשקלון"
+  },
+  "social": {
+    "instagramFarm": "https://www.instagram.com/petel.ofer/",
+    "instagramCafe": "https://www.instagram.com/cafeflora.petel/",
+    "facebook": "https://www.facebook.com/ofer.raspberry/"
+  },
+  "hours": {
+    "weekdays": "ב׳–ה׳ 9:00–15:00",
+    "friday": "ו׳ 8:30–14:30",
+    "closed": "שבת, א׳ וחגים סגור"
+  },
+  "pages": [
+    {"title":"בית","slug":"home","url":"/"},
+    {"title":"קטיף וביקור","slug":"visit","url":"/visit/"},
+    {"title":"קפה פלורה בפטל","slug":"cafe","url":"/cafe/"},
+    {"title":"חנות המשק","slug":"shop","url":"/shop/"},
+    {"title":"אירועים","slug":"events","url":"/events/"},
+    {"title":"הסיפור שלנו","slug":"story","url":"/story/"},
+    {"title":"צור קשר","slug":"contact","url":"/contact/"},
+    {"title":"שאלות נפוצות","slug":"faq","url":"/faq/"}
+  ],
+  "assets": {
+    "logo": "../assets/petel-ofer-logo.svg"
+  }
+}
