@@ -3,385 +3,627 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>הפטל של עופר | משק ביידר – פירות יער, קטיף עצמי וקפה בנתיב העשרה</title>
-<meta name="description" content="הפטל של עופר – משק משפחתי בנתיב העשרה, דור שלישי לחקלאות: קטיף עצמי של פטל, תות וחמניות, עגלת הקפה קפה פלורה בפטל, חנות משק וריבות ביתיות. כשר. 054-300-6053">
+<title>הפטל של עופר · משק ביידר — פירות יער, קטיף וקפה בנתיב העשרה</title>
+<meta name="description" content="משק ביידר, נתיב העשרה: דור שלישי לחקלאות. קטיף פטל, תות וחמניות, עגלת הקפה קפה פלורה בפטל, וחנות משק עם ריבות ללא חומרים משמרים. 054-300-6053">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --berry:#b4234b; --berry-dark:#8e1a3b; --berry-deep:#6d1230;
-    --leaf:#3e6b4a; --leaf-dark:#2c4f36;
-    --cream:#fdf9f4; --cream-dark:#f6efe6; --sand:#e8ddcf; --ink:#2d2a26;
-    --radius:18px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Heebo','Segoe UI','Arial Hebrew',Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
-  img{max-width:100%}
-  a{color:var(--berry-dark)}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-  .btn{display:inline-block;padding:13px 28px;border-radius:14px;font-weight:700;text-decoration:none;transition:.2s;border:none;cursor:pointer;font-size:1rem;font-family:inherit}
-  .btn-berry{background:var(--berry);color:#fff}.btn-berry:hover{background:var(--berry-dark)}
-  .btn-leaf{background:var(--leaf);color:#fff}.btn-leaf:hover{background:var(--leaf-dark)}
-  .btn-white{background:#fff;color:var(--berry-deep)}.btn-white:hover{background:var(--cream-dark)}
-  .btn-ghost{border:2px solid rgba(255,255,255,.6);color:#fff;background:transparent}.btn-ghost:hover{background:rgba(255,255,255,.12)}
-  section{padding:70px 0}
-  h2.sec{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900;color:var(--berry-deep);margin-bottom:8px}
-  .sec-sub{color:#6b675f;margin-bottom:36px;max-width:640px}
-  .center{text-align:center}.center .sec-sub{margin-inline:auto}
+:root{
+  --wine:#2e0a16; --wine-2:#43101f; --rasp:#b62445; --rasp-deep:#8e1c37;
+  --rose:#d9a4ae; --rose-faint:#eed7db;
+  --paper:#f7f2ea; --paper-2:#efe7da; --ink:#2a2124; --ink-2:#6d6259;
+  --leaf:#405c46; --hair:#ddd2c2;
+  --serif:'Frank Ruhl Libre',Georgia,'Times New Roman',serif;
+  --sans:'Assistant','Segoe UI','Arial Hebrew',Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;font-size:17px;font-weight:400}
+::selection{background:var(--rasp);color:#fff}
+a{color:var(--rasp-deep)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
 
-  /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(253,249,244,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--berry-deep);font-weight:900;font-size:1.2rem;line-height:1.1}
-  .logo small{display:block;font-weight:400;font-size:.68rem;color:var(--leaf)}
-  .nav-links{display:flex;gap:4px;list-style:none}
-  .nav-links a{padding:9px 14px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
-  .nav-links a:hover{background:var(--cream-dark);color:var(--berry-dark)}
-  .nav-cta{white-space:nowrap}
-  #menu-btn{display:none;background:none;border:none;font-size:1.7rem;cursor:pointer;color:var(--berry-deep)}
-  @media(max-width:860px){
-    .nav-links{display:none;position:absolute;top:66px;right:0;left:0;background:var(--cream);flex-direction:column;padding:10px 16px 16px;border-bottom:1px solid var(--sand);box-shadow:0 12px 24px rgba(0,0,0,.08)}
-    .nav-links.open{display:flex}
-    .nav-links a{padding:13px 14px}
-    #menu-btn{display:block}
-    .nav-cta{display:none}
-  }
+/* ————— typography ————— */
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.28em;color:var(--rasp);text-transform:uppercase;display:flex;align-items:center;gap:14px}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--rasp);opacity:.45}
+h2.d{font-family:var(--serif);font-weight:900;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.12;color:var(--ink);margin:18px 0 14px;text-wrap:balance}
+.lede{font-size:1.06rem;color:var(--ink-2);max-width:58ch}
+.serif-num{font-family:var(--serif);font-variant-numeric:tabular-nums}
 
-  /* hero */
-  .hero{background:linear-gradient(165deg,var(--berry-deep),var(--berry-dark) 55%,var(--berry));color:#fff;text-align:center;padding:95px 20px 105px;position:relative;overflow:hidden}
-  .hero::before{content:"🍇 🫐 🍓 🌻 🍇 🫐 🍓 🌻 🍇 🫐 🍓 🌻 🍇 🫐 🍓 🌻 🍇 🫐 🍓 🌻";position:absolute;inset:-20px;font-size:95px;opacity:.08;line-height:1.4;pointer-events:none}
-  .hero>*{position:relative}
-  .badge{display:inline-block;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 18px;font-size:.9rem;margin-bottom:22px}
-  .hero h1{font-size:clamp(2.4rem,7vw,4rem);font-weight:900;line-height:1.15}
-  .hero h1 span{display:block;font-size:clamp(1.15rem,3vw,1.7rem);font-weight:500;margin-top:12px;color:rgba(255,255,255,.92)}
-  .hero p{max-width:640px;margin:22px auto 0;font-size:1.1rem;color:rgba(255,255,255,.88)}
-  .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+/* ————— buttons ————— */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;font-weight:600;font-size:.98rem;text-decoration:none;border:1px solid transparent;transition:all .25s ease;cursor:pointer;font-family:var(--sans)}
+.btn-solid{background:var(--rasp);color:#fff}
+.btn-solid:hover{background:var(--rasp-deep)}
+.btn-line{border-color:var(--rose);color:var(--rose-faint);background:transparent}
+.btn-line:hover{border-color:#fff;color:#fff}
+.btn-ink{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ink:hover{background:var(--ink);color:var(--paper)}
+.btn-paper{background:var(--paper);color:var(--wine)}
+.btn-paper:hover{background:#fff}
 
-  /* info strip */
-  .strip{margin-top:-46px;position:relative;z-index:5}
-  .strip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-  .strip-card{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:20px;box-shadow:0 10px 26px rgba(109,18,48,.09);text-align:center}
-  .strip-card .ico{font-size:1.9rem}
-  .strip-card b{display:block;margin:6px 0 3px;color:var(--berry-deep)}
-  .strip-card span{font-size:.88rem;color:#6b675f}
+/* ————— header ————— */
+.topline{background:var(--wine);color:var(--rose-faint);font-size:.82rem;letter-spacing:.06em;text-align:center;padding:8px 16px}
+.topline b{color:#fff;font-weight:600}
+header.site{position:sticky;top:0;z-index:60;background:rgba(247,242,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand svg{width:44px;height:44px}
+.brand .t{font-family:var(--serif);font-weight:900;font-size:1.35rem;line-height:1}
+.brand .s{font-size:.7rem;letter-spacing:.22em;color:var(--ink-2);margin-top:4px}
+.nav-links{display:flex;gap:2px;list-style:none}
+.nav-links a{padding:10px 16px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;border-bottom:2px solid transparent;transition:.2s}
+.nav-links a:hover{color:var(--rasp);border-bottom-color:var(--rasp)}
+.nav-phone{font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--wine);text-decoration:none;direction:ltr}
+#burger{display:none;background:none;border:1px solid var(--hair);width:46px;height:46px;cursor:pointer;font-size:1.3rem;color:var(--ink)}
+@media(max-width:980px){
+  .nav-links{display:none;position:absolute;top:78px;right:0;left:0;background:var(--paper);flex-direction:column;border-bottom:1px solid var(--hair);padding:12px clamp(20px,4vw,48px) 22px;box-shadow:0 24px 40px rgba(46,10,22,.12)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px 4px;border-bottom:1px solid var(--hair)}
+  .nav-phone{display:none}
+  #burger{display:block}
+}
 
-  /* story + timeline */
-  .story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:start}
-  @media(max-width:860px){.story-grid{grid-template-columns:1fr}}
-  .story p{margin-bottom:14px}
-  .timeline{position:relative;padding-right:26px;border-right:3px solid var(--sand)}
-  .tl{position:relative;padding-bottom:26px}
-  .tl:last-child{padding-bottom:0}
-  .tl::before{content:"";position:absolute;right:-36px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--berry);border:3px solid var(--cream)}
-  .tl b{color:var(--berry-deep)}
-  .tl small{display:block;color:var(--leaf);font-weight:700;margin-bottom:2px}
-  .quote{background:var(--cream-dark);border-right:5px solid var(--berry);border-radius:12px;padding:18px 20px;font-style:italic;margin-top:18px;color:#55514a}
+/* ————— hero ————— */
+.hero{background:var(--wine);color:var(--paper);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 18% 75%,rgba(182,36,69,.35),transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:clamp(64px,9vw,120px) 0 clamp(56px,7vw,96px);position:relative;z-index:2}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{order:-1;max-width:290px;margin-inline:auto}}
+.hero .eyebrow{color:var(--rose)}
+.hero .eyebrow::after{background:var(--rose)}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.9rem,7.2vw,5.4rem);line-height:1.05;margin:26px 0 8px;color:#fff;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--rose)}
+.hero .sub{font-family:var(--serif);font-weight:300;font-size:clamp(1.15rem,2.4vw,1.55rem);color:var(--rose-faint);max-width:30ch;line-height:1.5}
+.hero p.body{margin:22px 0 34px;color:rgba(247,242,234,.78);max-width:52ch}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+.float{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
 
-  /* cards */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-  .card{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:26px;box-shadow:0 4px 14px rgba(45,42,38,.05)}
-  .card .ico{font-size:2.4rem}
-  .card h3{margin:10px 0 6px;color:var(--berry-deep);font-size:1.15rem}
-  .card p{font-size:.93rem;color:#5d594f}
-  .card ul{margin:10px 18px 0 0;font-size:.93rem;color:#5d594f}
-  .card li{margin-bottom:5px}
-  .price-tag{display:inline-block;background:var(--cream-dark);color:var(--leaf-dark);font-weight:700;border-radius:999px;padding:3px 14px;font-size:.85rem;margin-top:8px}
+/* entrance */
+.rise{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.2,.7,.3,1) forwards}
+.d1{animation-delay:.08s}.d2{animation-delay:.22s}.d3{animation-delay:.36s}.d4{animation-delay:.5s}.d5{animation-delay:.64s}
+@keyframes rise{to{opacity:1;transform:none}}
 
-  .alt{background:var(--cream-dark)}
-  .green{background:var(--leaf-dark);color:var(--cream)}
-  .green h2.sec{color:#fff}
-  .green .sec-sub{color:rgba(253,249,244,.75)}
-  .green .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);box-shadow:none}
-  .green .card h3{color:#fff}
-  .green .card p,.green .card ul{color:rgba(253,249,244,.85)}
+/* ticker */
+.ticker{border-top:1px solid rgba(217,164,174,.25);background:var(--wine);color:var(--rose);overflow:hidden;position:relative;z-index:2}
+.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tick 36s linear infinite;width:max-content;padding:13px 0}
+.ticker span{font-size:.85rem;letter-spacing:.24em;padding:0 26px;border-left:1px solid rgba(217,164,174,.3)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(50%)}}
 
-  /* products */
-  .prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
-  .prod{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
-  .prod:hover{box-shadow:0 10px 24px rgba(109,18,48,.12);transform:translateY(-3px)}
-  .prod .tile{height:130px;display:flex;align-items:center;justify-content:center;font-size:3.4rem}
-  .t1{background:linear-gradient(135deg,#ffe4ec,#fbcfe8)}.t2{background:linear-gradient(135deg,#fef3c7,#fde68a)}
-  .t3{background:linear-gradient(135deg,#ede9fe,#ddd6fe)}.t4{background:linear-gradient(135deg,#d1fae5,#a7f3d0)}
-  .prod-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
-  .prod-body b{color:var(--berry-deep)}
-  .prod-body span{font-size:.85rem;color:#6b675f;flex:1;margin:4px 0 12px}
-  .prod-body a{font-size:.9rem;text-align:center}
+/* ————— info line ————— */
+.infoline{border-bottom:1px solid var(--hair)}
+.infoline .row{display:grid;grid-template-columns:repeat(4,1fr);}
+.infoline .cell{padding:26px 22px;border-left:1px solid var(--hair);display:flex;gap:14px;align-items:flex-start}
+.infoline .cell:last-child{border-left:none}
+.infoline b{display:block;font-size:.8rem;letter-spacing:.18em;color:var(--rasp);font-weight:600;margin-bottom:3px}
+.infoline span{font-size:.92rem;color:var(--ink-2);line-height:1.55}
+.infoline svg{width:22px;height:22px;flex-shrink:0;margin-top:3px}
+@media(max-width:900px){.infoline .row{grid-template-columns:1fr 1fr}.infoline .cell:nth-child(2){border-left:none}}
+@media(max-width:560px){.infoline .row{grid-template-columns:1fr}.infoline .cell{border-left:none;border-bottom:1px solid var(--hair)}.infoline .cell:last-child{border-bottom:none}}
 
-  /* reviews */
-  .stars{color:#f59e0b;font-size:1.2rem;letter-spacing:2px}
-  .rev{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:22px}
-  .rev p{font-style:italic;color:#55514a;margin:8px 0}
-  .media-strip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px}
-  .media-chip{background:#fff;border:1px solid var(--sand);border-radius:999px;padding:8px 18px;font-size:.88rem;font-weight:500}
+/* ————— sections ————— */
+section{padding:clamp(70px,9vw,120px) 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,84px);align-items:start}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}}
 
-  /* contact */
-  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-  .c-card{background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:22px}
-  .c-card b{color:var(--berry-deep);display:block;margin-bottom:4px}
-  .c-card a{text-decoration:none;font-weight:500}
-  .c-card .num{direction:ltr;display:inline-block}
+/* story */
+.story p{margin-bottom:16px;max-width:60ch}
+.story .drop::first-letter{font-family:var(--serif);font-weight:900;font-size:3.4em;float:right;line-height:.82;margin-left:12px;color:var(--rasp)}
+.pull{font-family:var(--serif);font-weight:500;font-style:italic;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.5;color:var(--wine);border-right:3px solid var(--rasp);padding-right:22px;margin:30px 0 6px}
+.pull small{display:block;font-family:var(--sans);font-style:normal;font-size:.8rem;letter-spacing:.2em;color:var(--ink-2);margin-top:12px}
+.timeline{border-right:1px solid var(--hair);padding-right:34px;display:flex;flex-direction:column;gap:30px}
+.tl{position:relative}
+.tl::before{content:"";position:absolute;right:-39px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--rasp)}
+.tl .yr{font-family:var(--serif);font-weight:900;font-size:1.5rem;color:var(--rasp);line-height:1.2;font-variant-numeric:tabular-nums}
+.tl .tt{font-weight:600;color:var(--ink);margin-top:2px}
+.tl p{font-size:.92rem;color:var(--ink-2);max-width:38ch}
 
-  footer{background:var(--leaf-dark);color:rgba(253,249,244,.85);padding:44px 0 0;margin-top:70px}
-  .foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px;padding-bottom:34px}
-  footer h4{color:#fff;margin-bottom:10px}
-  footer ul{list-style:none}
-  footer li{margin-bottom:7px;font-size:.92rem}
-  footer a{color:rgba(253,249,244,.85)}
-  .foot-bottom{border-top:1px solid rgba(255,255,255,.15);padding:16px 0;text-align:center;font-size:.8rem;color:rgba(253,249,244,.55)}
+/* stats */
+.stats{border-block:1px solid var(--hair);background:var(--paper-2)}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{text-align:center;padding:44px 18px;border-left:1px solid var(--hair)}
+.stat:last-child{border-left:none}
+.stat .n{font-family:var(--serif);font-weight:900;font-size:clamp(2.2rem,4.5vw,3.2rem);color:var(--wine);line-height:1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:.85rem;letter-spacing:.12em;color:var(--ink-2);margin-top:10px}
+@media(max-width:700px){.stats .row{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-left:none}.stat{padding:30px 12px}}
 
-  /* dialogs */
-  dialog{max-width:640px;width:92%;border:none;border-radius:var(--radius);padding:30px;margin:auto;max-height:82vh;overflow-y:auto}
-  dialog::backdrop{background:rgba(45,42,38,.55)}
-  dialog h3{color:var(--berry-deep);margin-bottom:12px}
-  dialog h4{margin:14px 0 4px;color:var(--leaf-dark)}
-  dialog p,dialog li{font-size:.92rem;color:#4b473f}
-  dialog ul{margin-right:20px}
-  .dlg-close{float:left;background:var(--cream-dark);border:none;border-radius:10px;padding:6px 14px;cursor:pointer;font-family:inherit;font-weight:700}
+/* farm features */
+.features{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--hair);border-right:1px solid var(--hair);margin-top:48px}
+.feat{border-bottom:1px solid var(--hair);border-left:1px solid var(--hair);padding:36px 30px;transition:background .3s}
+.feat:hover{background:#fff}
+.feat svg{width:30px;height:30px;margin-bottom:18px}
+.feat h3{font-family:var(--serif);font-weight:700;font-size:1.22rem;margin-bottom:8px;color:var(--ink)}
+.feat p{font-size:.93rem;color:var(--ink-2)}
+@media(max-width:900px){.features{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.features{grid-template-columns:1fr}}
 
-  /* floating */
-  .float-btns{position:fixed;bottom:18px;left:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
-  .fbtn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;font-size:1.5rem;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.22);text-decoration:none}
-  .f-wa{background:#25d366;color:#fff}
-  .f-a11y{background:var(--leaf);color:#fff}
-  .a11y-panel{position:fixed;bottom:84px;left:18px;z-index:60;background:#fff;border:1px solid var(--sand);border-radius:var(--radius);padding:16px;width:225px;box-shadow:0 14px 34px rgba(0,0,0,.2);display:none}
-  .a11y-panel.open{display:block}
-  .a11y-panel button{display:block;width:100%;text-align:right;background:var(--cream);border:none;border-radius:10px;padding:9px 12px;margin-bottom:7px;cursor:pointer;font-family:inherit;font-size:.9rem}
-  .a11y-panel button.on{background:var(--berry);color:#fff}
+/* seasons */
+.seasons{margin-top:44px;border:1px solid var(--hair);background:#fff}
+.seasons table{width:100%;border-collapse:collapse;font-size:.9rem}
+.seasons th,.seasons td{padding:15px 18px;text-align:right;border-bottom:1px solid var(--hair)}
+.seasons th{font-size:.76rem;letter-spacing:.18em;color:var(--ink-2);font-weight:600;background:var(--paper-2)}
+.seasons tr:last-child td{border-bottom:none}
+.seasons td:first-child{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--wine)}
+.dot-strip{display:inline-flex;gap:5px}
+.dot-strip i{width:11px;height:11px;border-radius:50%;background:var(--rose-faint)}
+.dot-strip i.on{background:var(--rasp)}
+.season-note{font-size:.85rem;color:var(--ink-2);padding:14px 18px;background:var(--paper-2);border-top:1px solid var(--hair)}
 
-  html.big{font-size:118%}
-  html.bigger{font-size:135%}
-  html.contrast body{background:#fff}
-  html.contrast .card,html.contrast .prod,html.contrast .strip-card{border-color:#999}
-  html.links a{text-decoration:underline!important}
-  html.nomotion *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+/* shop — menu style */
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px clamp(40px,6vw,90px);margin-top:44px}
+@media(max-width:820px){.menu-cols{grid-template-columns:1fr}}
+.mi{padding:20px 0;border-bottom:1px solid var(--hair)}
+.mi .line{display:flex;align-items:baseline;gap:12px}
+.mi .nm{font-family:var(--serif);font-weight:700;font-size:1.18rem;color:var(--ink);white-space:nowrap}
+.mi .dots{flex:1;border-bottom:1px dotted #c4b7a4;transform:translateY(-4px)}
+.mi .tag{font-size:.72rem;letter-spacing:.14em;color:var(--rasp);font-weight:600;white-space:nowrap}
+.mi p{font-size:.9rem;color:var(--ink-2);margin-top:5px;max-width:46ch}
+.mi a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--rasp-deep)}
+.mi a:hover{text-decoration:underline}
+.shop-cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.shop-cta .hint{font-size:.88rem;color:var(--ink-2)}
 
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
-  .reveal.vis{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
-  .skip{position:absolute;top:-60px;right:14px;background:var(--berry);color:#fff;padding:9px 16px;border-radius:0 0 12px 12px;z-index:99;transition:top .2s}
-  .skip:focus{top:0}
-  .note{font-size:.83rem;color:#8a857b;margin-top:22px}
+/* cafe band */
+.band{background:var(--wine);color:var(--paper)}
+.band .eyebrow{color:var(--rose)}.band .eyebrow::after{background:var(--rose)}
+.band h2.d{color:#fff}
+.band .lede{color:rgba(247,242,234,.75)}
+.cafe-menu{border:1px solid rgba(217,164,174,.3);padding:34px clamp(22px,3vw,40px)}
+.cafe-menu h3{font-family:var(--serif);font-weight:700;font-size:1.1rem;color:var(--rose);letter-spacing:.06em;margin-bottom:20px}
+.cafe-menu .mi{border-color:rgba(217,164,174,.22)}
+.cafe-menu .mi .nm{color:#fff;font-size:1.05rem}
+.cafe-menu .mi .dots{border-color:rgba(217,164,174,.4)}
+.cafe-menu .mi p{color:rgba(247,242,234,.66)}
+.award{display:flex;gap:16px;align-items:center;margin-top:30px;padding:22px 24px;background:rgba(182,36,69,.18);border-right:3px solid var(--rasp)}
+.award .no1{font-family:var(--serif);font-weight:900;font-size:2.6rem;color:var(--rose);line-height:1}
+.award p{font-size:.95rem;color:rgba(247,242,234,.85)}
+
+/* events */
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--hair);margin-top:44px}
+.ev{padding:38px 30px;border-left:1px solid var(--hair);background:#fff}
+.ev:last-child{border-left:none}
+.ev .num{font-family:var(--serif);font-weight:300;font-size:2.6rem;color:var(--rose);line-height:1}
+.ev h3{font-family:var(--serif);font-weight:700;font-size:1.25rem;margin:14px 0 8px}
+.ev p{font-size:.93rem;color:var(--ink-2)}
+@media(max-width:820px){.ev-grid{grid-template-columns:1fr}.ev{border-left:none;border-bottom:1px solid var(--hair)}.ev:last-child{border-bottom:none}}
+
+/* reviews */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:48px}
+@media(max-width:820px){.quotes{grid-template-columns:1fr}}
+.q{position:relative;padding-top:34px}
+.q::before{content:"”";position:absolute;top:-12px;right:-4px;font-family:var(--serif);font-size:5rem;color:var(--rose);line-height:1}
+.q p{font-family:var(--serif);font-weight:500;font-size:1.18rem;line-height:1.55;color:var(--wine)}
+.q .by{margin-top:14px;font-size:.8rem;letter-spacing:.16em;color:var(--ink-2)}
+.press{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:56px;padding-top:30px;border-top:1px solid var(--hair);align-items:center;justify-content:center}
+.press span{font-size:.85rem;letter-spacing:.14em;color:var(--ink-2);font-weight:500}
+
+/* contact */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px)}
+@media(max-width:860px){.contact-wrap{grid-template-columns:1fr}}
+.bigphone{font-family:var(--serif);font-weight:900;font-size:clamp(2rem,4.4vw,3.1rem);color:var(--wine);text-decoration:none;direction:ltr;display:inline-block;border-bottom:3px solid var(--rasp);line-height:1.3;font-variant-numeric:tabular-nums}
+.c-list{list-style:none;margin-top:34px;display:flex;flex-direction:column}
+.c-list li{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--hair);font-size:.95rem}
+.c-list .k{color:var(--ink-2);letter-spacing:.08em;font-size:.82rem;font-weight:600;padding-top:2px;white-space:nowrap}
+.c-list a{font-weight:600;text-decoration:none}
+.c-list a:hover{text-decoration:underline}
+.hours-card{border:1px solid var(--hair);background:#fff;padding:34px clamp(22px,3vw,40px)}
+.hours-card h3{font-family:var(--serif);font-weight:700;font-size:1.3rem;margin-bottom:20px}
+.hrow{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--hair);font-size:.95rem}
+.hrow:last-of-type{border-bottom:none}
+.hrow b{font-weight:600}
+.hrow .closed{color:var(--rasp);font-weight:600}
+.notice{margin-top:22px;padding:16px 18px;background:var(--paper-2);font-size:.85rem;color:var(--ink-2);border-right:3px solid var(--rose)}
+
+/* footer */
+footer{background:var(--wine);color:rgba(247,242,234,.72);padding:64px 0 0}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:38px;padding-bottom:48px}
+@media(max-width:860px){.f-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.f-grid{grid-template-columns:1fr}}
+footer h4{font-family:var(--serif);color:#fff;font-size:1.05rem;margin-bottom:16px;font-weight:700}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:.9rem}
+footer a{color:rgba(247,242,234,.72);text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.f-brand p{font-size:.9rem;max-width:34ch;line-height:1.7}
+.f-memory{font-family:var(--serif);font-style:italic;color:var(--rose);margin-top:16px;font-size:.95rem}
+.f-bottom{border-top:1px solid rgba(217,164,174,.2);padding:20px 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.78rem;color:rgba(247,242,234,.45)}
+.linklike{background:none;border:none;color:rgba(247,242,234,.72);cursor:pointer;font-family:var(--sans);font-size:.9rem;padding:0}
+.linklike:hover{color:#fff;text-decoration:underline}
+
+/* dialogs */
+dialog{max-width:620px;width:92%;border:none;margin:auto;max-height:84vh;overflow-y:auto;background:var(--paper);color:var(--ink);padding:0}
+dialog::backdrop{background:rgba(46,10,22,.66)}
+.dlg-head{background:var(--wine);color:#fff;padding:22px 30px;display:flex;justify-content:space-between;align-items:center}
+.dlg-head h3{font-family:var(--serif);font-weight:700;font-size:1.25rem}
+.dlg-body{padding:26px 30px 34px}
+.dlg-body h4{font-family:var(--serif);margin:18px 0 6px;color:var(--wine)}
+.dlg-body p,.dlg-body li{font-size:.92rem;color:var(--ink-2)}
+.dlg-body ul{margin-right:20px}
+.x{background:none;border:1px solid rgba(255,255,255,.4);color:#fff;width:34px;height:34px;cursor:pointer;font-size:1rem}
+.x:hover{background:rgba(255,255,255,.12)}
+
+/* floats */
+.floats{position:fixed;bottom:20px;left:20px;z-index:70;display:flex;flex-direction:column;gap:10px}
+.fbtn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(46,10,22,.28);text-decoration:none;transition:transform .2s}
+.fbtn:hover{transform:translateY(-2px)}
+.f-wa{background:#1faa53}
+.f-a11y{background:var(--wine);color:var(--paper);font-size:1.25rem}
+.a11y-panel{position:fixed;bottom:150px;left:20px;z-index:70;background:#fff;border:1px solid var(--hair);padding:18px;width:230px;box-shadow:0 20px 50px rgba(46,10,22,.25);display:none}
+.a11y-panel.open{display:block}
+.a11y-panel button{display:block;width:100%;text-align:right;background:var(--paper);border:1px solid var(--hair);padding:10px 13px;margin-bottom:8px;cursor:pointer;font-family:var(--sans);font-size:.88rem;transition:.15s}
+.a11y-panel button:hover{border-color:var(--rasp)}
+.a11y-panel button.on{background:var(--rasp);color:#fff;border-color:var(--rasp)}
+
+html.big{font-size:118%}
+html.bigger{font-size:134%}
+html.contrast body{background:#fff}
+html.contrast .lede,html.contrast .mi p,html.contrast .feat p,html.contrast .infoline span{color:#333}
+html.links a{text-decoration:underline!important}
+html.nomotion *,html.nomotion *::before,html.nomotion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.vis{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal,.rise{opacity:1;transform:none;animation:none;transition:none}
+  .float,.ticker-track{animation:none}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+html,body{overflow-x:clip}
+.skip{position:absolute;top:-64px;right:16px;background:var(--rasp);color:#fff;padding:10px 18px;z-index:99;transition:top .2s;text-decoration:none}
+.skip:focus{top:0}
+:focus-visible{outline:3px solid var(--rasp);outline-offset:2px}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">דילוג לתוכן הראשי</a>
 
-<header>
+<div class="topline">משק ביידר · נתיב העשרה · <b>עונת הקטיף פתוחה</b> — מומלץ לתאם הגעה: <b><span dir="ltr">054-300-6053</span></b></div>
+
+<header class="site">
   <div class="wrap nav">
-    <a href="#" class="logo"><span style="font-size:1.7rem">🍇</span><span>הפטל של עופר<small>משק ביידר · נתיב העשרה · עוטף עזה</small></span></a>
+    <a href="#" class="brand" aria-label="הפטל של עופר – דף הבית">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="19" cy="26" r="6.5" fill="#b62445"/><circle cx="29" cy="26" r="6.5" fill="#8e1c37"/>
+        <circle cx="24" cy="34" r="6.5" fill="#b62445"/><circle cx="24" cy="19" r="6.5" fill="#8e1c37"/>
+        <path d="M24 13c0-4 2-7 6-8-1 4-2 6-6 8Z" fill="#405c46"/>
+      </svg>
+      <span><span class="t">הפטל של עופר</span><span class="s" style="display:block">משק ביידר · נתיב העשרה</span></span>
+    </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#story">הסיפור שלנו</a></li>
-      <li><a href="#visit">קטיף וביקור</a></li>
-      <li><a href="#products">חנות המשק</a></li>
-      <li><a href="#cafe">קפה פלורה בפטל</a></li>
-      <li><a href="#events">קבוצות ואירועים</a></li>
-      <li><a href="#contact">צור קשר</a></li>
+      <li><a href="#story">הסיפור</a></li>
+      <li><a href="#farm">המשק</a></li>
+      <li><a href="#picking">קטיף</a></li>
+      <li><a href="#shop">חנות</a></li>
+      <li><a href="#cafe">קפה פלורה</a></li>
+      <li><a href="#events">אירועים</a></li>
+      <li><a href="#contact">ביקור</a></li>
     </ul>
-    <a class="btn btn-berry nav-cta" href="tel:0543006053">📞 054-300-6053</a>
-    <button id="menu-btn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+    <a class="nav-phone" href="tel:0543006053">054-300-6053</a>
+    <button id="burger" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
   </div>
 </header>
 
 <main id="main">
 
+<!-- HERO -->
 <div class="hero">
-  <span class="badge">🌱 משק משפחתי · דור שלישי לחקלאות · כשר בהשגחת הרבנות המקומית</span>
-  <h1>הפטל של עופר<span>פירות יער, קפה ואהבה גדולה לאדמה – בלב עוטף עזה</span></h1>
-  <p>קטיף עצמי של פטל, תות וחמניות ב"שדה המתחלף", עגלת הקפה "קפה פלורה בפטל" בתוך חממת פטל קסומה,
-     מרכז מבקרים וחנות משק עם ריבות וממתקים מתוצרת בית. מחכים לכם בנתיב העשרה 🍓</p>
-  <div class="hero-btns">
-    <a class="btn btn-white" href="#visit">🍓 קטיף עצמי</a>
-    <a class="btn btn-leaf" href="#products">🧺 חנות המשק</a>
-    <a class="btn btn-ghost" href="#events">🎉 קבוצות ואירועים</a>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rise d1">משק משפחתי · דור שלישי · מאז שנות ה־70</p>
+      <h1 class="rise d2">פרי אדום,<br>לב <em>גדול.</em></h1>
+      <p class="sub rise d3">פטל שגדל על חול, משפחה שצמחה מחדש — בנתיב העשרה, חמש דקות מהים.</p>
+      <p class="body rise d4">קטיף פטל, תות וחמניות ב״שדה המתחלף״, קפה משובח בעגלת ״קפה פלורה בפטל״ שבלב החממה, וחנות משק עם ריבות שמבושלות כאן — בלי חומרים משמרים, בלי קיצורי דרך.</p>
+      <div class="hero-ctas rise d5">
+        <a class="btn btn-solid" href="#picking">לתיאום קטיף</a>
+        <a class="btn btn-line" href="#shop">חנות המשק</a>
+      </div>
+    </div>
+    <div class="hero-art float rise d3" aria-hidden="true">
+      <svg viewBox="0 0 340 380" fill="none">
+        <defs>
+          <radialGradient id="g1" cx="35%" cy="30%" r="80%"><stop offset="0%" stop-color="#e05575"/><stop offset="100%" stop-color="#8e1c37"/></radialGradient>
+          <radialGradient id="g2" cx="35%" cy="30%" r="80%"><stop offset="0%" stop-color="#c93a5c"/><stop offset="100%" stop-color="#701530"/></radialGradient>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#557a5e"/><stop offset="100%" stop-color="#33523d"/></linearGradient>
+        </defs>
+        <path d="M170 86c-4-30 10-52 44-62-4 30-16 50-44 62Z" fill="url(#lg)"/>
+        <path d="M170 86c4-26-6-46-34-56 2 26 12 44 34 56Z" fill="#405c46" opacity=".85"/>
+        <path d="M170 60v30" stroke="#405c46" stroke-width="7" stroke-linecap="round"/>
+        <g>
+          <circle cx="126" cy="140" r="34" fill="url(#g1)"/><circle cx="214" cy="140" r="34" fill="url(#g2)"/>
+          <circle cx="82"  cy="205" r="34" fill="url(#g2)"/><circle cx="170" cy="205" r="34" fill="url(#g1)"/><circle cx="258" cy="205" r="34" fill="url(#g2)"/>
+          <circle cx="126" cy="270" r="34" fill="url(#g1)"/><circle cx="214" cy="270" r="34" fill="url(#g1)"/>
+          <circle cx="170" cy="330" r="34" fill="url(#g2)"/>
+          <circle cx="114" cy="128" r="9" fill="#fff" opacity=".22"/><circle cx="202" cy="128" r="9" fill="#fff" opacity=".18"/>
+          <circle cx="70" cy="193" r="9" fill="#fff" opacity=".16"/><circle cx="158" cy="193" r="9" fill="#fff" opacity=".22"/>
+          <circle cx="114" cy="258" r="9" fill="#fff" opacity=".18"/><circle cx="158" cy="318" r="9" fill="#fff" opacity=".16"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker">
+      <span>פטל אדום</span><span>פטל שחור — אוסנה</span><span>תות שדה חורפי</span><span>חמניות</span><span>ריבות ללא חומרים משמרים</span><span>קפה פלורה בפטל</span><span>קטיף עצמי</span><span>כשר · רבנות מקומית</span>
+    </div>
   </div>
 </div>
 
-<div class="wrap strip">
-  <div class="strip-grid">
-    <div class="strip-card"><span class="ico">🕘</span><b>שעות פעילות</b><span>ב׳–ה׳ 9:00–15:00 · ו׳ 8:30–14:30<br>שבת, א׳ וחגים – סגור</span></div>
-    <div class="strip-card"><span class="ico">📍</span><b>איפה אנחנו</b><span>מושב נתיב העשרה, חוף אשקלון<br>בוויז: "קפה פלורה בפטל"</span></div>
-    <div class="strip-card"><span class="ico">✡️</span><b>כשרות</b><span>תעודת כשרות של הרבנות המקומית<br>ידידותי גם לטבעונים 🌱</span></div>
-    <div class="strip-card"><span class="ico">♿</span><b>נגישות</b><span>כניסה וחניה נגישות לכיסאות גלגלים<br>פינת משחק לילדים</span></div>
+<!-- INFO LINE -->
+<div class="infoline">
+  <div class="wrap row">
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+      <div><b>שעות פעילות</b><span>ב׳–ה׳ 9:00–15:00 · ו׳ 8:30–14:30<br>שבת, א׳ וחגים — סגור</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-5.8-7-11a7 7 0 1 1 14 0c0 5.2-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <div><b>הגעה</b><span>מושב נתיב העשרה, חוף אשקלון<br>בוויז: ״קפה פלורה בפטל״</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.6" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8L12 3Z"/></svg>
+      <div><b>כשרות</b><span>תעודת כשרות — רבנות מקומית<br>אפשרויות טבעוניות</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6m0 0-3.5 6M12 14l3.5 6M6 11h12"/></svg>
+      <div><b>נגישות</b><span>כניסה וחניה נגישות<br>פינת משחק לילדים</span></div>
+    </div>
   </div>
 </div>
 
+<!-- STORY -->
 <section id="story">
-  <div class="wrap story-grid">
+  <div class="wrap grid-2">
     <div class="story reveal">
-      <h2 class="sec">הסיפור שלנו 💚</h2>
-      <p>הסיפור של משק ביידר מתחיל רחוק – במטחנות קמח באיטליה – וממשיך בשנות ה-70, כשסבא יענקל'ה
-         הקים משק משפחתי קטן במושב נתיב העשרה וגידל, כמו רוב חקלאי המושב, זרעי פלפל ועגבניות לייצוא.</p>
-      <p>הבן, <b>עופר ביידר</b>, היה חקלאי כמעט 30 שנה. ב-2018 הוא העז לחלום חלום לא הגיוני:
-         לגדל פטל – פרי שאוהב קור – על אדמת החול החמה של הדרום. החלום הצליח, והמשק הפך לאחד
-         ממרכזי הגידול האיכותיים בארץ לפטל ולפירות יער.</p>
-      <p>ביוני 2021 נפטר עופר בפתאומיות, בגיל 57. בתו <b>מור ביידר-ויום</b> ואחיו <b>ערן</b> עזבו
-         את הקריירות שלהם ובחרו להמשיך את דרכו מתוך תחושת שליחות – והקימו את מרכז המבקרים
-         שנושא את שמו: "הפטל של עופר".</p>
-      <p>ב-7 באוקטובר עמד המשק בפני חורבן: שלושה ימים בלי חשמל והשקיה, ו-90% מהצמחים מתו.
-         לקח שנה שלמה – ומאות מתנדבים מכל הארץ – לשקם הכול. היום המשק פורח מחדש, ועגלת הקפה
-         "קפה פלורה בפטל" שנפתחה בחממה היא סמל הצמיחה הזאת.</p>
-      <div class="quote">"רצינו מקום שאנשים מהאזור ייפגשו בו, יתחבקו, ידברו" – מור ביידר</div>
+      <p class="eyebrow">הסיפור שלנו</p>
+      <h2 class="d">שלושה דורות,<br>אדמה אחת.</h2>
+      <p class="drop">הסיפור של משק ביידר מתחיל רחוק — במטחנות קמח באיטליה — וממשיך בשנות ה־70, כשסבא יענקל׳ה נטע שורשים במושב נתיב העשרה וגידל, כמו רוב חקלאי המושב, זרעי פלפל ועגבניות לייצוא.</p>
+      <p>הבן, עופר ביידר, עבד את האדמה הזאת כמעט שלושים שנה. ב־2018 הוא העז לחלום חלום לא הגיוני: לגדל פטל — פרי שאוהב קור — על חול חם, חמש דקות מהים. החלום הצליח מעבר לכל דמיון, והמשק הפך לאחד ממרכזי הגידול האיכותיים בארץ לפטל ולפירות יער.</p>
+      <p>ביוני 2021 נפטר עופר בפתאומיות, והוא בן 57. בתו מור ואחיו ערן עזבו קריירות שלמות ובחרו להמשיך את דרכו — והקימו את מרכז המבקרים שנושא את שמו.</p>
+      <p>ואז הגיע השבעה באוקטובר. שלושה ימים בלי חשמל ובלי השקיה, ותשעים אחוז מהצמחים מתו. לקח שנה שלמה — ומאות מתנדבים מכל הארץ — להחזיר את המשק לחיים. היום הוא פורח מחדש.</p>
+      <div class="pull">״רצינו מקום שאנשים מהאזור ייפגשו בו, יתחבקו, ידברו.״<small>מור ביידר — ynet</small></div>
     </div>
     <div class="reveal">
-      <h3 style="color:var(--leaf-dark);margin-bottom:18px">⏳ ציוני דרך</h3>
+      <p class="eyebrow" style="margin-bottom:34px">ציוני דרך</p>
       <div class="timeline">
-        <div class="tl"><small>שנות ה-70</small><b>ההתחלה:</b> סבא יענקל'ה מקים את המשק בנתיב העשרה</div>
-        <div class="tl"><small>2018</small><b>החלום של עופר:</b> שורות הפטל הראשונות ניטעות בחול הדרומי</div>
-        <div class="tl"><small>2021</small><b>עופר ז"ל נפטר בפתאומיות.</b> מור וערן ממשיכים את דרכו ומקימים את מרכז המבקרים על שמו</div>
-        <div class="tl"><small>7.10.2023</small><b>המכה:</b> 90% מהצמחים מתים אחרי שלושה ימים ללא חשמל והשקיה</div>
-        <div class="tl"><small>2024</small><b>השיקום:</b> שנה של עבודה עם מאות מתנדבים מכל הארץ</div>
-        <div class="tl"><small>היום</small><b>פורחים מחדש:</b> קטיף, קפה פלורה בפטל, חנות משק – ומלא אהבה 🍓</div>
+        <div class="tl"><div class="yr">1970s</div><div class="tt">ההתחלה</div><p>סבא יענקל׳ה מקים משק משפחתי קטן בנתיב העשרה.</p></div>
+        <div class="tl"><div class="yr">2018</div><div class="tt">החלום של עופר</div><p>שורות הפטל הראשונות ניטעות בחול הדרומי — בניגוד לכל היגיון חקלאי.</p></div>
+        <div class="tl"><div class="yr">2021</div><div class="tt">ממשיכים את הדרך</div><p>עופר ז״ל נפטר בפתאומיות. מור וערן מקימים את ״הפטל של עופר״ — מרכז מבקרים על שמו.</p></div>
+        <div class="tl"><div class="yr">2023</div><div class="tt">המכה</div><p>7.10 — שלושה ימים ללא חשמל והשקיה. 90% מהצמחים אובדים.</p></div>
+        <div class="tl"><div class="yr">2024</div><div class="tt">השיקום</div><p>שנה של עבודת כפיים עם מאות מתנדבים, ופתיחת ״קפה פלורה בפטל״.</p></div>
+        <div class="tl"><div class="yr">היום</div><div class="tt">פורחים מחדש</div><p>קטיף, קפה, חנות משק — והרבה סיבות טובות לבקר.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alt" id="farm">
-  <div class="wrap center">
-    <h2 class="sec reveal">מה מחכה לכם במשק 🧑‍🌾</h2>
-    <p class="sec-sub reveal">מתחם חוויתי שלם בתוך חממת פטל – לזוגות, משפחות וקבוצות</p>
-    <div class="cards" style="text-align:right">
-      <div class="card reveal"><span class="ico">🫐</span><h3>חממת פטל קסומה</h3><p>מרכז מבקרים בתוך חממה פורחת של פירות יער, עם פינות ישיבה לכ-100 אורחים בין השיחים.</p></div>
-      <div class="card reveal"><span class="ico">🌻</span><h3>"השדה המתחלף"</h3><p>מול העגלה – שדה שמתחלף עם העונות: פטל, תות שדה, חמניות ופרחים. קוטפים ביד או במזמרה את מה שהעונה מציעה.</p></div>
-      <div class="card reveal"><span class="ico">☕</span><h3>קפה פלורה בפטל</h3><p>עגלת קפה כשרה בלב החממה: קפה משובח, כריכים, סלטים, מאפים ועוגות – בניהול דניאל מנתיב העשרה.</p></div>
-      <div class="card reveal"><span class="ico">🧺</span><h3>חנות המשק</h3><p>ריבות ללא חומרים משמרים, שוקולד פטל, ליקרים, רטבים ואפילו סבון מזרעי פטל – הכל מתוצרת המשק, בגישת אפס בזבוז.</p></div>
-      <div class="card reveal"><span class="ico">🎤</span><h3>סיור והרצאה</h3><p>סיור מודרך בחממה: איך מגדלים פטל בחול? למה הוא כל כך יקר? – והסיפור המרגש של המשפחה והשיקום.</p></div>
-      <div class="card reveal"><span class="ico">👧</span><h3>מתאים למשפחות</h3><p>פינת משחק לילדים, שבילים נגישים לעגלות ולכיסאות גלגלים, וקטיף שילדים פשוט מתים עליו.</p></div>
-    </div>
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap row">
+    <div class="stat reveal"><div class="n"><span data-count="3">0</span></div><div class="l">דורות של חקלאות</div></div>
+    <div class="stat reveal"><div class="n"><span data-count="90">0</span>%</div><div class="l">מהצמחים שוקמו אחרי 7.10</div></div>
+    <div class="stat reveal"><div class="n"><span data-count="100">0</span></div><div class="l">מקומות ישיבה בחממה</div></div>
+    <div class="stat reveal"><div class="n">5.0</div><div class="l">דירוג גוגל ★</div></div>
   </div>
-</section>
+</div>
 
-<section id="visit">
+<!-- FARM -->
+<section id="farm">
   <div class="wrap">
-    <h2 class="sec reveal">קטיף עצמי חוויתי 🍓</h2>
-    <p class="sec-sub reveal">עונות הקטיף מתחלפות לאורך השנה – פטל, תות שדה, חמניות ופרחים. מומלץ לוודא מה קוטפים השבוע בטלפון או בעמודי הרשתות שלנו.</p>
-    <div class="cards">
-      <div class="card reveal"><span class="ico">🫐</span><h3>קטיף פטל + סיור</h3>
-        <ul><li>קטיף פטל ופירות יער ישר מהשיח</li><li>סיור מודרך על צמח הפטל ויתרונותיו הבריאותיים</li><li>כל משתתף יוצא עם קופסת פטל שקטף בעצמו</li></ul>
-        <span class="price-tag">בתיאום מראש · 054-300-6053</span></div>
-      <div class="card reveal"><span class="ico">🌻</span><h3>קטיף חמניות ופרחים</h3>
-        <ul><li>חוויה עונתית צבעונית בשדה המתחלף</li><li>אפשרות להכין זר חמניות משלכם</li><li>ילדים עד גיל שנתיים – חינם</li></ul>
-        <span class="price-tag">בעונה · מתעדכן בפייסבוק</span></div>
-      <div class="card reveal"><span class="ico">🍓</span><h3>תות שדה חורפי</h3>
-        <ul><li>תות בר מתוק בשיא החורף</li><li>משתלב מושלם עם קפה ומאפה בעגלה</li><li>מתאים לזוגות ולמשפחות</li></ul>
-        <span class="price-tag">דצמבר–אביב · לפי יבול</span></div>
-    </div>
-    <p class="note reveal">⚠️ הפעילות בהתאם לעונה, ליבול ולהנחיות פיקוד העורף – בימים רגישים כדאי להתקשר לפני שיוצאים.</p>
-  </div>
-</section>
-
-<section class="alt" id="products">
-  <div class="wrap">
-    <h2 class="sec reveal">חנות המשק 🧺</h2>
-    <p class="sec-sub reveal">מהפירות שלנו, בסירים שלנו, בלי חומרים משמרים ובלי צבעי מאכל – ובגישת "אפס בזבוז": כל פרי בשל מדי הופך לריבה, לרוטב או לליקר. להזמנות ומשלוחים – וואטסאפ או טלפון.</p>
-    <div class="prod-grid">
-      <div class="prod reveal"><div class="tile t1">🍇</div><div class="prod-body"><b>פטל אדום טרי</b><span>נקטף באותו בוקר, אחד-אחד וביד עדינה. המלך של המשק.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%A4%D7%98%D7%9C%20%D7%98%D7%A8%D7%99" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t3">🫐</div><div class="prod-body"><b>פטל שחור (אוסנה)</b><span>זן נדיר ומיוחד, עמוק ועשיר בטעם – גאווה מקומית.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A4%D7%98%D7%9C%20%D7%A9%D7%97%D7%95%D7%A8" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t1">🍓</div><div class="prod-body"><b>תות שדה חורפי</b><span>תות בר מתוק שגדל אצלנו בשיא החורף, ולצידו תות פקיסטני חדש במטע.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%AA%D7%95%D7%AA%20%D7%A9%D7%93%D7%94" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t2">🍯</div><div class="prod-body"><b>ריבות וקונפיטורות</b><span>מבושלות במשק מפירות בשלים – בלי חומרים משמרים ובלי צבעי מאכל.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%A8%D7%99%D7%91%D7%95%D7%AA" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t3">🍫</div><div class="prod-body"><b>שוקולד וליקר פטל</b><span>שוקולד על בסיס פטל, ליקר פטל וליקר שוקולד – פינוק בוגר ומתוק.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A9%D7%95%D7%A7%D7%95%D7%9C%D7%93%20%D7%95%D7%9C%D7%99%D7%A7%D7%A8" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t2">🥫</div><div class="prod-body"><b>רטבים מפירות יער</b><span>רטבים סמיכים לגבינות, לבשרים ולקינוחים – ישר מהסירים שלנו.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A8%D7%98%D7%91%D7%99%D7%9D" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t4">🧼</div><div class="prod-body"><b>סבון זרעי פטל</b><span>סבון טבעי בעבודת יד עם גרעיני פטל – מתנה מקורית מהמשק.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A1%D7%91%D7%95%D7%9F%20%D7%96%D7%A8%D7%A2%D7%99%20%D7%A4%D7%98%D7%9C" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-      <div class="prod reveal"><div class="tile t4">🎁</div><div class="prod-body"><b>מארזי שי</b><span>שילוב מוצרי המשק במארז מתנה – לחגים, לאירוח ולעובדים.</span><a class="btn btn-berry" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%9E%D7%90%D7%A8%D7%96%D7%99%20%D7%A9%D7%99" target="_blank" rel="noopener">הזמנה בוואטסאפ</a></div></div>
-    </div>
-    <p class="note reveal">💻 חנות אונליין מלאה: <a href="https://petelofer.co.il" target="_blank" rel="noopener">petelofer.co.il</a></p>
-  </div>
-</section>
-
-<section id="cafe">
-  <div class="wrap story-grid">
     <div class="reveal">
-      <h2 class="sec">קפה פלורה בפטל ☕</h2>
-      <p style="margin-bottom:14px">עגלת קפה כשרה בלב חממת הפטל, שנולדה מתוך השיקום שאחרי ה-7.10 –
-         "רצינו מקום שאנשים מהאזור ייפגשו בו, יתחבקו, ידברו". את העגלה מנהלת דניאל, בת המושב,
-         והיא הפכה לאחת מעגלות הקפה המדוברות בעוטף.</p>
-      <p style="margin-bottom:14px">יושבים בין שיחי הפטל, שותים קפה משובח, ומזמינים מהתפריט הקטן והמדויק –
-         והכול במרחק יד מהשדה שממנו מגיע הפרי שבצלחת.</p>
-      <p>🏅 דורגה כעגלת הקפה <b>מספר 1 מבין "4 עגלות הקפה הכי שוות בעוטף"</b> – "חוויה של צבעים וטעמים".</p>
+      <p class="eyebrow">המתחם</p>
+      <h2 class="d">מה מחכה לכם במשק</h2>
+      <p class="lede">מתחם חוויתי שלם בתוך חממת פטל פעילה — לזוגות, למשפחות ולקבוצות.</p>
     </div>
-    <div class="card reveal" style="background:var(--cream-dark);border:none">
-      <h3 style="font-size:1.2rem">🥐 טעימה מהתפריט</h3>
-      <ul>
-        <li><b>כריך גבינת עיזים וארטישוק</b> – לחם מחמצת, ממרח ארטישוק, תפוח ירוק, בצל סגול, רוקט ופקאן מסוכר</li>
-        <li><b>"סלט של דני"</b> – חסה, סלק, מלפפון, בצל סגול, בולגרית וגרעיני דלעת</li>
-        <li>טוסטים ופוקאצ'ה-פיצה מהטאבון</li>
-        <li>עוגות ויטרינה וקרואסונים</li>
-        <li>קפה משובח, שתייה קרה ולימונדה</li>
-      </ul>
-      <span class="price-tag">כשר · אופציות טבעוניות 🌱</span>
-    </div>
-  </div>
-</section>
-
-<section class="green" id="events">
-  <div class="wrap center">
-    <h2 class="sec reveal">קבוצות, חברות ואירועים 🎉</h2>
-    <p class="sec-sub reveal">מתחם עם ישיבה לכ-100 אורחים בתוך חממה – מקום אחר לגמרי ליום גיבוש, טיול מאורגן או חגיגה משפחתית</p>
-    <div class="cards" style="text-align:right">
-      <div class="card reveal"><span class="ico">🏢</span><h3>ימי גיבוש לארגונים</h3><p>סיור, הרצאה על תולדות המשק והצמיחה שאחרי ה-7.10, קטיף חוויתי וכיבוד כשר – חבילה מותאמת לצוות שלכם.</p></div>
-      <div class="card reveal"><span class="ico">🍽️</span><h3>ארוחות "מהשדה לצלחת"</h3><p>ארוחה מקומית שנבנית מירקות השדה הסמוך וממטעי המשפחה – חוויה קולינרית שורשית אמיתית.</p></div>
-      <div class="card reveal"><span class="ico">🚌</span><h3>קבוצות מאורגנות</h3><p>גמלאים, בתי ספר, טיולי משפחות ותיירות פנים – סיור מודרך שכולל את סיפור המשק והמושב.</p></div>
-    </div>
-    <div style="margin-top:34px" class="reveal">
-      <a class="btn btn-white" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%A0%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%A7%D7%91%D7%95%D7%A6%D7%AA%D7%99" target="_blank" rel="noopener">💬 בקשת הצעת מחיר בוואטסאפ</a>
+    <div class="features">
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg>
+        <h3>חממת פטל קסומה</h3><p>מרכז מבקרים בתוך חממה פורחת, עם פינות ישיבה לכ־100 אורחים בין שיחי הפטל.</p>
+      </div>
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.6-5.6 1.4-1.4M5 19l1.4-1.4M18.6 17.6 20 19M5 5l1.4 1.4"/></svg>
+        <h3>״השדה המתחלף״</h3><p>שדה שמתחלף עם העונות: פטל, תות, חמניות ופרחים. קוטפים ביד או במזמרה את מה שהעונה נותנת.</p>
+      </div>
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><path d="M4 9h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9Z"/><path d="M17 10h1.8a2.2 2.2 0 0 1 0 4.4H17M7 5.5c.8-1 .8-2 0-3M11 5.5c.8-1 .8-2 0-3"/></svg>
+        <h3>קפה פלורה בפטל</h3><p>עגלת קפה כשרה בלב החממה, בניהול דניאל בת המושב — קפה משובח, כריכים, סלטים ומאפים.</p>
+      </div>
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.5 12h-11L5 8Z"/><path d="M8.5 8a3.5 3.5 0 1 1 7 0"/></svg>
+        <h3>חנות המשק</h3><p>ריבות בלי חומרים משמרים, שוקולד פטל, ליקרים, רטבים וסבון זרעי פטל — בגישת אפס בזבוז.</p>
+      </div>
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        <h3>סיור והרצאה</h3><p>איך מגדלים פטל על חול? למה הוא כל כך יקר? — הסיפור המלא של המשפחה, מהקמה ועד שיקום.</p>
+      </div>
+      <div class="feat reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b62445" stroke-width="1.5" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2"/><circle cx="17.5" cy="8.5" r="2.5"/><path d="M17 14a4.5 4.5 0 0 1 4 4.5V21"/></svg>
+        <h3>מתאים למשפחות</h3><p>פינת משחק לילדים, שבילים נגישים לעגלות וכיסאות גלגלים, וקטיף שילדים לא שוכחים.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="reviews">
-  <div class="wrap center">
-    <h2 class="sec reveal">אומרים עלינו 💬</h2>
-    <p class="sec-sub reveal"><span class="stars">★★★★★</span><br>דירוג 5.0 בגוגל</p>
-    <div class="cards" style="text-align:right">
-      <div class="rev reveal"><span class="stars">★★★★★</span><p>"פטל, אוכמניות ותות שדה טעימים מאוד, שירות מעולה"</p></div>
-      <div class="rev reveal"><span class="stars">★★★★★</span><p>"פטל מדהים, טעים ומתוק, מומלץ מאוד"</p></div>
-      <div class="rev reveal"><span class="stars">★★★★★</span><p>"קטיף עצמי וחוויה מיוחדת בנתיב העשרה – חוויה של צבעים וטעמים"</p></div>
-    </div>
-    <div class="media-strip reveal">
-      <span class="media-chip">📺 "עוטף ישראל" – קשת 12</span>
-      <span class="media-chip">📰 כתבות ב-ynet</span>
-      <span class="media-chip">🤝 מיזם הג'וינט וקבוצת עזריאלי</span>
-      <span class="media-chip">🇮🇱 חודש התיירות הישראלית</span>
-      <span class="media-chip">🌱 מומלץ Vegan-Friendly</span>
-    </div>
-  </div>
-</section>
-
-<section class="alt" id="contact">
+<!-- PICKING -->
+<section id="picking" style="padding-top:0">
   <div class="wrap">
-    <h2 class="sec reveal">בואו לבקר 📍</h2>
-    <p class="sec-sub reveal">מושב נתיב העשרה, מועצה אזורית חוף אשקלון – 5 דקות מהים, בלב עוטף עזה</p>
-    <div class="contact-grid">
-      <div class="c-card reveal"><b>📞 טלפון</b><a href="tel:0543006053" class="num">054-300-6053</a></div>
-      <div class="c-card reveal"><b>💚 וואטסאפ</b><a href="https://wa.me/972543006053" target="_blank" rel="noopener">שלחו הודעה – עונים מהר</a></div>
-      <div class="c-card reveal"><b>✉️ אימייל</b><a href="mailto:morbaider@gmail.com" class="num">morbaider@gmail.com</a></div>
-      <div class="c-card reveal"><b>🚗 ניווט</b><a href="https://waze.com/ul?q=קפה פלורה בפטל נתיב העשרה" target="_blank" rel="noopener">Waze: "קפה פלורה בפטל"</a></div>
-      <div class="c-card reveal"><b>📸 אינסטגרם</b><a href="https://www.instagram.com/petel.ofer/" target="_blank" rel="noopener">@petel.ofer</a> · <a href="https://www.instagram.com/cafeflora.petel/" target="_blank" rel="noopener">@cafeflora.petel</a></div>
-      <div class="c-card reveal"><b>📘 פייסבוק</b><a href="https://www.facebook.com/ofer.raspberry/" target="_blank" rel="noopener">הפטל של עופר</a> · <a href="https://www.facebook.com/coffeeflora1/" target="_blank" rel="noopener">קפה פלורה בפטל</a></div>
-      <div class="c-card reveal"><b>🕘 שעות פעילות</b>ב׳–ה׳ 9:00–15:00 · ו׳ 8:30–14:30<br>שבת, א׳ וחגים – סגור</div>
-      <div class="c-card reveal"><b>🌐 חנות אונליין</b><a href="https://petelofer.co.il" target="_blank" rel="noopener">petelofer.co.il</a></div>
+    <div class="reveal">
+      <p class="eyebrow">קטיף עצמי</p>
+      <h2 class="d">קוטפים את מה שהעונה נותנת</h2>
+      <p class="lede">כל משתתף בקטיף הפטל יוצא עם קופסה שקטף במו ידיו, אחרי סיור קצר על סודות הגידול. בעונת החמניות אפשר גם להרכיב זר משלכם. ילדים עד גיל שנתיים — חינם.</p>
     </div>
-    <p class="note reveal">⚠️ הפעילות כפופה להנחיות פיקוד העורף – בימים רגישים מומלץ להתעדכן טלפונית או בעמודי הרשתות לפני ההגעה.</p>
+    <div class="seasons reveal">
+      <table>
+        <caption class="sr-only">לוח עונות הקטיף במשק</caption>
+        <thead><tr><th>מה קוטפים</th><th>חורף</th><th>אביב</th><th>קיץ</th><th>סתיו</th></tr></thead>
+        <tbody>
+          <tr><td>פטל אדום ושחור</td>
+            <td><span class="dot-strip"><i class="on"></i><i class="on"></i><i class="on"></i></span></td>
+            <td><span class="dot-strip"><i class="on"></i><i class="on"></i><i></i></span></td>
+            <td><span class="dot-strip"><i></i><i></i><i></i></span></td>
+            <td><span class="dot-strip"><i class="on"></i><i></i><i></i></span></td></tr>
+          <tr><td>תות שדה</td>
+            <td><span class="dot-strip"><i class="on"></i><i class="on"></i><i class="on"></i></span></td>
+            <td><span class="dot-strip"><i class="on"></i><i></i><i></i></span></td>
+            <td><span class="dot-strip"><i></i><i></i><i></i></span></td>
+            <td><span class="dot-strip"><i></i><i></i><i></i></span></td></tr>
+          <tr><td>חמניות ופרחים</td>
+            <td><span class="dot-strip"><i></i><i></i><i></i></span></td>
+            <td><span class="dot-strip"><i class="on"></i><i class="on"></i><i></i></span></td>
+            <td><span class="dot-strip"><i class="on"></i><i class="on"></i><i></i></span></td>
+            <td><span class="dot-strip"><i></i><i></i><i></i></span></td></tr>
+        </tbody>
+      </table>
+      <div class="season-note">היבול תלוי במזג האוויר ובעונה — לפני שיוצאים, שווה לוודא בטלפון מה קוטפים השבוע. הפעילות כפופה להנחיות פיקוד העורף.</div>
+    </div>
+    <div class="shop-cta reveal">
+      <a class="btn btn-solid" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%A0%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A7%D7%98%D7%99%D7%A3" target="_blank" rel="noopener">תיאום קטיף בוואטסאפ</a>
+      <span class="hint">או בטלפון: <a href="tel:0543006053"><span dir="ltr">054-300-6053</span></a></span>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">חנות המשק</p>
+      <h2 class="d">מהשדה, בלי קיצורי דרך</h2>
+      <p class="lede">כל פרי שבשל מדי לשיווק הופך אצלנו למשהו טוב — ריבה, רוטב, ליקר או סבון. בלי חומרים משמרים, בלי צבעי מאכל. להזמנות ומשלוחים: וואטסאפ, טלפון או החנות המקוונת.</p>
+    </div>
+    <div class="menu-cols">
+      <div class="mi reveal"><div class="line"><span class="nm">פטל אדום טרי</span><span class="dots"></span><span class="tag">בעונה</span></div><p>נקטף באותו הבוקר, פרי־פרי, ביד עדינה. המלך של המשק.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%A4%D7%98%D7%9C%20%D7%98%D7%A8%D7%99" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">פטל שחור · אוסנה</span><span class="dots"></span><span class="tag">זן נדיר</span></div><p>עמוק, עשיר, כמעט ייני — גאווה מקומית שקשה למצוא במקום אחר.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A4%D7%98%D7%9C%20%D7%A9%D7%97%D7%95%D7%A8" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">תות שדה חורפי</span><span class="dots"></span><span class="tag">חורף</span></div><p>תות בר מתוק בשיא החורף, ולצדו תות פקיסטני צעיר שניטע במטע.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%AA%D7%95%D7%AA%20%D7%A9%D7%93%D7%94" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">ריבות וקונפיטורות</span><span class="dots"></span><span class="tag">תוצרת בית</span></div><p>מבושלות בסירים קטנים מפירות בשלים. רכיבים: פרי, סוכר, סבלנות.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%A8%D7%99%D7%91%D7%95%D7%AA" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">שוקולד פטל</span><span class="dots"></span><span class="tag">פינוק</span></div><p>שוקולד על בסיס הפטל שלנו — מתנה שנגמרת מהר מדי.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A9%D7%95%D7%A7%D7%95%D7%9C%D7%93%20%D7%A4%D7%98%D7%9C" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">ליקר פטל · ליקר שוקולד</span><span class="dots"></span><span class="tag">18+</span></div><p>ליקרים בייצור מקומי קטן — לסיום ארוחה או לערב חורפי.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%9C%D7%99%D7%A7%D7%A8%D7%99%D7%9D" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">רטבים מפירות יער</span><span class="dots"></span><span class="tag">מטבח</span></div><p>רטבים סמיכים לגבינות, לבשרים ולקינוחים — ישר מהסירים שלנו.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A8%D7%98%D7%91%D7%99%D7%9D" target="_blank" rel="noopener">להזמנה ←</a></div>
+      <div class="mi reveal"><div class="line"><span class="nm">סבון זרעי פטל</span><span class="dots"></span><span class="tag">עבודת יד</span></div><p>סבון טבעי עם גרעיני פטל — אפס בזבוז, מאה אחוז משק.</p><a href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A1%D7%91%D7%95%D7%9F%20%D7%96%D7%A8%D7%A2%D7%99%20%D7%A4%D7%98%D7%9C" target="_blank" rel="noopener">להזמנה ←</a></div>
+    </div>
+    <div class="shop-cta reveal">
+      <a class="btn btn-ink" href="https://petelofer.co.il" target="_blank" rel="noopener">לחנות המקוונת — petelofer.co.il</a>
+      <span class="hint">משלוחים בתיאום · איסוף מהמשק ללא עלות</span>
+    </div>
+  </div>
+</section>
+
+<!-- CAFE -->
+<section class="band" id="cafe">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow">עגלת הקפה</p>
+      <h2 class="d">קפה פלורה בפטל</h2>
+      <p class="lede" style="margin-bottom:18px">עגלת קפה כשרה בלב חממת הפטל, שנולדה מתוך השיקום שאחרי השבעה באוקטובר. יושבים בין השיחים, שותים קפה משובח — והפרי שבצלחת גדל במרחק נגיעה.</p>
+      <p style="color:rgba(247,242,234,.7);font-size:.95rem">את העגלה מנהלת דניאל, בת המושב, והיא הפכה במהירות לאחת מנקודות המפגש האהובות בעוטף.</p>
+      <div class="award reveal">
+        <div class="no1">№1</div>
+        <p>דורגה ראשונה מבין ״4 עגלות הקפה הכי שוות בעוטף״ — <em>״חוויה של צבעים וטעמים״</em></p>
+      </div>
+    </div>
+    <div class="cafe-menu reveal">
+      <h3>— מהתפריט —</h3>
+      <div class="mi"><div class="line"><span class="nm">כריך גבינת עיזים וארטישוק</span><span class="dots"></span></div><p>לחם מחמצת, ממרח ארטישוק, תפוח ירוק, בצל סגול, רוקט ופקאן מסוכר.</p></div>
+      <div class="mi"><div class="line"><span class="nm">״סלט של דני״</span><span class="dots"></span></div><p>חסה, סלק, מלפפון, בצל סגול, בולגרית וגרעיני דלעת.</p></div>
+      <div class="mi"><div class="line"><span class="nm">טוסטים ופוקאצ׳ות</span><span class="dots"></span></div><p>חמים מהטאבון, עם תוספות מהשדה.</p></div>
+      <div class="mi"><div class="line"><span class="nm">עוגות וקרואסונים</span><span class="dots"></span></div><p>ויטרינה מתחלפת — מומלץ להשאיר מקום.</p></div>
+      <div class="mi" style="border-bottom:none"><div class="line"><span class="nm">קפה משובח ולימונדה</span><span class="dots"></span></div><p>וגם שוקו לילדים שקטפו יפה.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">קבוצות וארגונים</p>
+      <h2 class="d">אירוע שמרגישים בידיים</h2>
+      <p class="lede">חממה עם ישיבה לכ־100 אורחים, סיפור אמיתי מרגש, וקטיף שמחבר את כולם — מסגרת אחרת לגמרי ליום גיבוש או לחגיגה.</p>
+    </div>
+    <div class="ev-grid">
+      <div class="ev reveal">
+        <div class="num serif-num">א</div>
+        <h3>ימי גיבוש לחברות</h3>
+        <p>סיור, הרצאה על המשק והצמיחה שאחרי ה־7.10, קטיף חוויתי וכיבוד כשר — מותאם לצוות שלכם, כולל חשבונית כחוק.</p>
+      </div>
+      <div class="ev reveal">
+        <div class="num serif-num">ב</div>
+        <h3>מהשדה לצלחת</h3>
+        <p>ארוחה מקומית שנבנית מירקות השדה הסמוך וממטעי המשפחה — חוויה קולינרית שורשית באמת.</p>
+      </div>
+      <div class="ev reveal">
+        <div class="num serif-num">ג</div>
+        <h3>קבוצות מאורגנות</h3>
+        <p>גמלאים, בתי ספר וטיולים — סיור מודרך שמספר גם את סיפורו של המושב צמוד הגדר.</p>
+      </div>
+    </div>
+    <div class="shop-cta reveal">
+      <a class="btn btn-solid" href="https://wa.me/972543006053?text=%D7%94%D7%99%D7%99%2C%20%D7%A0%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2" target="_blank" rel="noopener">לקבלת הצעת מחיר</a>
+      <span class="hint">מענה תוך יום עסקים</span>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal center" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">אומרים עלינו · ★ 5.0 בגוגל</p>
+    </div>
+    <div class="quotes">
+      <div class="q reveal"><p>פטל, אוכמניות ותות שדה טעימים מאוד — ושירות מעולה.</p><div class="by">ביקורת גוגל</div></div>
+      <div class="q reveal"><p>פטל מדהים, טעים ומתוק. מומלץ מאוד.</p><div class="by">ביקורת גוגל</div></div>
+      <div class="q reveal"><p>קטיף עצמי וחוויה מיוחדת בנתיב העשרה — חוויה של צבעים וטעמים.</p><div class="by">דרום אדום · ספארי אפריקה ישראל</div></div>
+    </div>
+    <div class="press reveal">
+      <span>כפי שסוקר ב־</span><span>ynet</span><span>·</span><span>״עוטף ישראל״ — קשת 12</span><span>·</span><span>מיזם הג׳וינט וקבוצת עזריאלי</span><span>·</span><span>חודש התיירות הישראלית</span><span>·</span><span>Vegan Friendly</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:0">
+  <div class="wrap contact-wrap">
+    <div class="reveal">
+      <p class="eyebrow">בואו לבקר</p>
+      <h2 class="d">חמש דקות מהים,<br>בלב עוטף עזה</h2>
+      <a class="bigphone" href="tel:0543006053">054-300-6053</a>
+      <ul class="c-list">
+        <li><span class="k">וואטסאפ</span><a href="https://wa.me/972543006053" target="_blank" rel="noopener">שלחו הודעה — עונים מהר</a></li>
+        <li><span class="k">אימייל</span><a href="mailto:morbaider@gmail.com" dir="ltr">morbaider@gmail.com</a></li>
+        <li><span class="k">ניווט</span><a href="https://waze.com/ul?q=קפה פלורה בפטל נתיב העשרה" target="_blank" rel="noopener">Waze — ״קפה פלורה בפטל״</a></li>
+        <li><span class="k">אינסטגרם</span><span><a href="https://www.instagram.com/petel.ofer/" target="_blank" rel="noopener">petel.ofer@</a> · <a href="https://www.instagram.com/cafeflora.petel/" target="_blank" rel="noopener">cafeflora.petel@</a></span></li>
+        <li><span class="k">פייסבוק</span><span><a href="https://www.facebook.com/ofer.raspberry/" target="_blank" rel="noopener">הפטל של עופר</a> · <a href="https://www.facebook.com/coffeeflora1/" target="_blank" rel="noopener">קפה פלורה בפטל</a></span></li>
+        <li><span class="k">חנות מקוונת</span><a href="https://petelofer.co.il" target="_blank" rel="noopener">petelofer.co.il</a></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="hours-card">
+        <h3>שעות פעילות</h3>
+        <div class="hrow"><b>שני–חמישי</b><span class="serif-num">9:00–15:00</span></div>
+        <div class="hrow"><b>שישי</b><span class="serif-num">8:30–14:30</span></div>
+        <div class="hrow"><b>שבת · ראשון · חגים</b><span class="closed">סגור</span></div>
+        <div class="notice">הפעילות כפופה להנחיות פיקוד העורף. בימים רגישים כדאי להתעדכן טלפונית או בעמודי הרשתות לפני ההגעה.</div>
+      </div>
+    </div>
   </div>
 </section>
 
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <div>
-      <h4>🍇 הפטל של עופר</h4>
-      <p style="font-size:.9rem">משק ביידר – משק משפחתי בנתיב העשרה, דור שלישי לחקלאות, הפועל מתוך
-      אהבה לאדמה, אחריות וחזון של ציונות. לזכרו של עופר ביידר ז"ל.</p>
+  <div class="wrap f-grid">
+    <div class="f-brand">
+      <h4>הפטל של עופר · משק ביידר</h4>
+      <p>משק משפחתי בנתיב העשרה, דור שלישי לחקלאות — פועל מתוך אהבה לאדמה, אחריות וחזון של ציונות.</p>
+      <p class="f-memory">לזכרו של עופר ביידר ז״ל, 1964–2021</p>
     </div>
     <div>
       <h4>ניווט</h4>
       <ul>
         <li><a href="#story">הסיפור שלנו</a></li>
-        <li><a href="#visit">קטיף עצמי</a></li>
-        <li><a href="#products">חנות המשק</a></li>
+        <li><a href="#picking">קטיף עצמי</a></li>
+        <li><a href="#shop">חנות המשק</a></li>
         <li><a href="#cafe">קפה פלורה בפטל</a></li>
         <li><a href="#events">קבוצות ואירועים</a></li>
       </ul>
@@ -397,107 +639,135 @@
     <div>
       <h4>יצירת קשר</h4>
       <ul>
-        <li>📞 <a href="tel:0543006053"><span dir="ltr">054-300-6053</span></a></li>
-        <li>✉️ <a href="mailto:morbaider@gmail.com">morbaider@gmail.com</a></li>
-        <li>📍 מושב נתיב העשרה, עוטף עזה</li>
+        <li><a href="tel:0543006053"><span dir="ltr">054-300-6053</span></a></li>
+        <li><a href="mailto:morbaider@gmail.com" dir="ltr" style="direction:ltr">morbaider@gmail.com</a></li>
+        <li>מושב נתיב העשרה, חוף אשקלון</li>
       </ul>
     </div>
   </div>
-  <div class="foot-bottom">© <span id="year"></span> הפטל של עופר – משק ביידר, נתיב העשרה. כל הזכויות שמורות.</div>
+  <div class="wrap f-bottom">
+    <span>© <span id="year"></span> הפטל של עופר — משק ביידר, נתיב העשרה. כל הזכויות שמורות.</span>
+    <span>כשר בהשגחת הרבנות המקומית</span>
+  </div>
 </footer>
 
 <dialog id="dlg-a11y">
-  <button class="dlg-close" data-close>סגירה ✕</button>
-  <h3>הצהרת נגישות</h3>
-  <p>אנו ב"הפטל של עופר" פועלים למתן שירות שוויוני ונגיש לכלל לקוחותינו, בהתאם לחוק שוויון זכויות
-  לאנשים עם מוגבלות, התשנ"ח–1998, ותקנותיו.</p>
-  <h4>באתר</h4>
-  <ul><li>תפריט נגישות: הגדלת טקסט, ניגודיות, הדגשת קישורים ועצירת אנימציות</li>
-  <li>ניווט מקלדת, מבנה כותרות תקין וקישור דילוג לתוכן</li></ul>
-  <h4>במשק</h4>
-  <ul><li>כניסה וחניה נגישות לכיסאות גלגלים</li><li>דרכי גישה מישוריות לחממה, לעגלת הקפה ולחנות</li></ul>
-  <p>נתקלתם בקושי? נשמח לתקן: 054-300-6053 · morbaider@gmail.com</p>
+  <div class="dlg-head"><h3>הצהרת נגישות</h3><button class="x" data-close aria-label="סגירה">✕</button></div>
+  <div class="dlg-body">
+    <p>אנו ב״הפטל של עופר״ פועלים למתן שירות שוויוני ונגיש לכלל לקוחותינו, בהתאם לחוק שוויון זכויות לאנשים עם מוגבלות, התשנ״ח–1998, ותקנותיו.</p>
+    <h4>באתר</h4>
+    <ul><li>תפריט נגישות: הגדלת טקסט, ניגודיות, הדגשת קישורים ועצירת אנימציות</li><li>ניווט מקלדת מלא, מבנה כותרות תקין וקישור דילוג לתוכן</li></ul>
+    <h4>במשק</h4>
+    <ul><li>כניסה וחניה נגישות לכיסאות גלגלים</li><li>דרכי גישה מישוריות לחממה, לעגלת הקפה ולחנות</li></ul>
+    <p style="margin-top:14px">נתקלתם בקושי? נשמח לתקן: <span dir="ltr">054-300-6053</span> · morbaider@gmail.com</p>
+  </div>
 </dialog>
 
 <dialog id="dlg-terms">
-  <button class="dlg-close" data-close>סגירה ✕</button>
-  <h3>תנאי שימוש</h3>
-  <p>השימוש באתר מהווה הסכמה לתנאים אלה. התכנים באתר נועדו למידע כללי; הזמנות, מחירים וזמינות
-  מתואמים ישירות מול המשק בטלפון או בוואטסאפ, וכפופים לעונה וליבול.</p>
-  <ul>
-    <li>פעילות הקטיף והביקור מותנית במזג האוויר, ביבול ובהנחיות פיקוד העורף.</li>
-    <li>ביטול עסקאות – בהתאם לחוק הגנת הצרכן, התשמ"א–1981; מוצרי מזון טריים הם "טובין פסידים" שאינם ניתנים להחזרה.</li>
-    <li>כל התכנים והתמונות באתר – קניין המשק ואין להעתיקם ללא אישור.</li>
-    <li>על תנאים אלה חלים דיני מדינת ישראל.</li>
-  </ul>
+  <div class="dlg-head"><h3>תנאי שימוש</h3><button class="x" data-close aria-label="סגירה">✕</button></div>
+  <div class="dlg-body">
+    <p>השימוש באתר מהווה הסכמה לתנאים אלה. התכנים באתר נועדו למידע כללי; הזמנות, מחירים וזמינות מתואמים ישירות מול המשק, וכפופים לעונה וליבול.</p>
+    <ul>
+      <li>פעילות הקטיף והביקור מותנית במזג האוויר, ביבול ובהנחיות פיקוד העורף.</li>
+      <li>ביטול עסקאות — בהתאם לחוק הגנת הצרכן, התשמ״א–1981; מוצרי מזון טריים הם ״טובין פסידים״ שאינם ניתנים להחזרה.</li>
+      <li>התכנים והעיצוב — קניין המשק; אין להעתיק ללא אישור בכתב.</li>
+      <li>על תנאים אלה חלים דיני מדינת ישראל; סמכות השיפוט — בתי המשפט במחוז הדרום.</li>
+    </ul>
+  </div>
 </dialog>
 
 <dialog id="dlg-privacy">
-  <button class="dlg-close" data-close>סגירה ✕</button>
-  <h3>מדיניות פרטיות</h3>
-  <p>אתר זה הוא אתר מידע (frontend בלבד) ואינו אוסף או שומר פרטים אישיים בשרת. פנייה אלינו
-  בטלפון, בוואטסאפ או באימייל נעשית ביוזמתכם, והפרטים שתמסרו ישמשו רק למענה ולתיאום –
-  בהתאם לחוק הגנת הפרטיות, התשמ"א–1981, לרבות תיקון 13.</p>
-  <p>העדפות נגישות נשמרות מקומית בדפדפן שלכם בלבד (localStorage) ואינן נשלחות לאף גורם.
-  ניתן למחוק אותן בכל עת בניקוי נתוני האתר בדפדפן.</p>
+  <div class="dlg-head"><h3>מדיניות פרטיות</h3><button class="x" data-close aria-label="סגירה">✕</button></div>
+  <div class="dlg-body">
+    <p>אתר זה הוא אתר מידע בלבד ואינו אוסף או שומר פרטים אישיים בשרת. פנייה בטלפון, בוואטסאפ או באימייל נעשית ביוזמתכם, והפרטים ישמשו רק למענה ולתיאום — בהתאם לחוק הגנת הפרטיות, התשמ״א–1981, לרבות תיקון 13.</p>
+    <p style="margin-top:10px">העדפות הנגישות נשמרות מקומית בדפדפן שלכם בלבד (localStorage) ואינן נשלחות לשום גורם. ניתן למחוק אותן בכל עת בניקוי נתוני האתר בדפדפן.</p>
+  </div>
 </dialog>
 
-<div class="float-btns">
+<div class="floats">
   <button class="fbtn f-a11y" id="a11y-btn" aria-label="תפריט נגישות" aria-expanded="false">♿</button>
-  <a class="fbtn f-wa" href="https://wa.me/972543006053" target="_blank" rel="noopener" aria-label="וואטסאפ">💬</a>
+  <a class="fbtn f-wa" href="https://wa.me/972543006053" target="_blank" rel="noopener" aria-label="וואטסאפ">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .2 0 .8-.2 1.3Z"/></svg>
+  </a>
 </div>
 <div class="a11y-panel" id="a11y-panel" role="dialog" aria-label="הגדרות נגישות">
-  <button id="a-text">🔠 גודל טקסט: רגיל</button>
-  <button id="a-contrast">🎨 ניגודיות גבוהה</button>
-  <button id="a-links">🔗 הדגשת קישורים</button>
-  <button id="a-motion">🛑 עצירת אנימציות</button>
-  <button id="a-reset">↺ איפוס</button>
+  <button id="a-text">גודל טקסט: רגיל</button>
+  <button id="a-contrast">ניגודיות גבוהה</button>
+  <button id="a-links">הדגשת קישורים</button>
+  <button id="a-motion">עצירת אנימציות</button>
+  <button id="a-reset">איפוס הגדרות</button>
 </div>
 
-<style>.linklike{background:none;border:none;color:rgba(253,249,244,.85);cursor:pointer;font-family:inherit;font-size:.92rem;padding:0;text-decoration:underline}</style>
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  // mobile menu
-  const menuBtn = document.getElementById('menu-btn'), navLinks = document.getElementById('nav-links');
-  menuBtn.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open);
-    menuBtn.textContent = open ? '✕' : '☰';
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open'); menuBtn.textContent = '☰'; menuBtn.setAttribute('aria-expanded','false');
-  }));
+// duplicate ticker content for seamless loop
+const tick = document.getElementById('ticker');
+tick.innerHTML += tick.innerHTML;
 
-  // dialogs
-  document.querySelectorAll('[data-dlg]').forEach(b => b.addEventListener('click', () => document.getElementById(b.dataset.dlg).showModal()));
-  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
-  document.querySelectorAll('dialog').forEach(d => d.addEventListener('click', e => { if (e.target === d) d.close(); }));
+// mobile menu
+const burger = document.getElementById('burger'), nav = document.getElementById('nav-links');
+burger.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+  burger.textContent = open ? '✕' : '☰';
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open'); burger.textContent = '☰'; burger.setAttribute('aria-expanded', 'false');
+}));
 
-  // scroll reveal
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } }), { threshold: .12 });
+// dialogs
+document.querySelectorAll('[data-dlg]').forEach(b => b.addEventListener('click', () => document.getElementById(b.dataset.dlg).showModal()));
+document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+document.querySelectorAll('dialog').forEach(d => d.addEventListener('click', e => { if (e.target === d) d.close(); }));
+
+// reveal on scroll (with safety fallback so content is never left hidden)
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); }
+  }), { threshold: .08, rootMargin: '0px 0px -5% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.reveal:not(.vis)').forEach(el => el.classList.add('vis')), 3500);
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('vis'));
+}
 
-  // accessibility widget
-  const html = document.documentElement, KEY = 'petel_a11y_static';
-  let st = { t: 0, c: false, l: false, m: false };
-  try { st = { ...st, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch(e) {}
-  const labels = ['רגיל', 'מוגדל', 'גדול מאוד'];
-  function apply() {
-    html.classList.toggle('big', st.t === 1); html.classList.toggle('bigger', st.t === 2);
-    html.classList.toggle('contrast', st.c); html.classList.toggle('links', st.l); html.classList.toggle('nomotion', st.m);
-    document.getElementById('a-text').textContent = '🔠 גודל טקסט: ' + labels[st.t];
-    [['a-contrast', st.c], ['a-links', st.l], ['a-motion', st.m]].forEach(([id, on]) => document.getElementById(id).classList.toggle('on', on));
-    localStorage.setItem(KEY, JSON.stringify(st));
-  }
-  apply();
-  const panel = document.getElementById('a11y-panel'), a11yBtn = document.getElementById('a11y-btn');
-  a11yBtn.addEventListener('click', () => { const open = panel.classList.toggle('open'); a11yBtn.setAttribute('aria-expanded', open); });
-  document.getElementById('a-text').addEventListener('click', () => { st.t = (st.t + 1) % 3; apply(); });
-  document.getElementById('a-contrast').addEventListener('click', () => { st.c = !st.c; apply(); });
-  document.getElementById('a-links').addEventListener('click', () => { st.l = !st.l; apply(); });
-  document.getElementById('a-motion').addEventListener('click', () => { st.m = !st.m; apply(); });
-  document.getElementById('a-reset').addEventListener('click', () => { st = { t: 0, c: false, l: false, m: false }; apply(); localStorage.removeItem(KEY); });
+// stat counters
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  cio.unobserve(e.target);
+  const end = +e.target.dataset.count;
+  if (reduce) { e.target.textContent = end; return; }
+  const t0 = performance.now(), dur = 1400;
+  (function step(t) {
+    const p = Math.min((t - t0) / dur, 1);
+    e.target.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}), { threshold: .6 });
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+// accessibility widget
+const html = document.documentElement, KEY = 'petel_a11y_v2';
+let st = { t: 0, c: false, l: false, m: false };
+try { st = { ...st, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch (e) {}
+const labels = ['רגיל', 'מוגדל', 'גדול מאוד'];
+function apply() {
+  html.classList.toggle('big', st.t === 1); html.classList.toggle('bigger', st.t === 2);
+  html.classList.toggle('contrast', st.c); html.classList.toggle('links', st.l); html.classList.toggle('nomotion', st.m);
+  document.getElementById('a-text').textContent = 'גודל טקסט: ' + labels[st.t];
+  [['a-contrast', st.c], ['a-links', st.l], ['a-motion', st.m]].forEach(([id, on]) => document.getElementById(id).classList.toggle('on', on));
+  localStorage.setItem(KEY, JSON.stringify(st));
+}
+apply();
+const panel = document.getElementById('a11y-panel'), ab = document.getElementById('a11y-btn');
+ab.addEventListener('click', () => { const open = panel.classList.toggle('open'); ab.setAttribute('aria-expanded', open); });
+document.getElementById('a-text').addEventListener('click', () => { st.t = (st.t + 1) % 3; apply(); });
+document.getElementById('a-contrast').addEventListener('click', () => { st.c = !st.c; apply(); });
+document.getElementById('a-links').addEventListener('click', () => { st.l = !st.l; apply(); });
+document.getElementById('a-motion').addEventListener('click', () => { st.m = !st.m; apply(); });
+document.getElementById('a-reset').addEventListener('click', () => { st = { t: 0, c: false, l: false, m: false }; apply(); localStorage.removeItem(KEY); });
 </script>
 </body>
 </html>
