@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+<title id="title">הפטל של עופר</title><desc id="desc">משק ביידר, נתיב העשרה</desc>
+<defs><path id="arc" d="M260 245 Q500 65 740 245"/></defs>
+<g fill="none" stroke="#F7F2EA" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="M500 315 C455 245 390 220 330 245 C370 295 430 320 500 315Z"/>
+<path d="M500 315 C545 245 610 220 670 245 C630 295 570 320 500 315Z"/>
+<path d="M485 315 C430 300 375 325 350 380 C410 382 455 360 485 315Z"/>
+<path d="M515 315 C570 300 625 325 650 380 C590 382 545 360 515 315Z"/>
+<path d="M500 315 L500 390"/>
+<path d="M380 255 Q430 270 485 305 M620 255 Q570 270 515 305 M370 350 Q425 340 480 320 M630 350 Q575 340 520 320" stroke-width="7"/>
+</g>
+<g fill="#F7F2EA">
+<circle cx="455" cy="400" r="27"/><circle cx="500" cy="390" r="27"/><circle cx="545" cy="400" r="27"/>
+<circle cx="432" cy="438" r="27"/><circle cx="478" cy="435" r="27"/><circle cx="524" cy="435" r="27"/><circle cx="568" cy="438" r="27"/>
+<circle cx="455" cy="478" r="27"/><circle cx="500" cy="475" r="27"/><circle cx="545" cy="478" r="27"/>
+<circle cx="478" cy="516" r="27"/><circle cx="522" cy="516" r="27"/>
+<circle cx="500" cy="552" r="25"/>
+</g>
+<g fill="#F7F2EA" font-family="Rubik, Arial, sans-serif" text-anchor="middle">
+<text font-size="66" font-weight="500"><textPath href="#arc" startOffset="50%">משק ביידר</textPath></text>
+<text x="500" y="660" font-size="104" font-weight="700">הפטל של עופר</text>
+<text x="500" y="735" font-size="48" font-weight="500" letter-spacing="10">נתיב העשרה</text>
+</g>
+</svg>
