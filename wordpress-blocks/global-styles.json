@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "layout": {"contentSize":"760px","wideSize":"1180px"},
+    "color": {
+      "palette": [
+        {"slug":"cream","name":"Cream","color":"#F8F1E6"},
+        {"slug":"raspberry-deep","name":"Raspberry Deep","color":"#8E1738"},
+        {"slug":"raspberry","name":"Raspberry","color":"#C92F5A"},
+        {"slug":"raspberry-soft","name":"Raspberry Soft","color":"#F1C5CF"},
+        {"slug":"leaf","name":"Leaf Green","color":"#526B47"},
+        {"slug":"sage","name":"Sage","color":"#DCE3D3"},
+        {"slug":"soft-black","name":"Soft Black","color":"#171513"},
+        {"slug":"white","name":"White","color":"#FFFFFF"}
+      ]
+    }
+  },
+  "styles": {
+    "color":{"background":"#F8F1E6","text":"#171513"},
+    "typography":{"fontFamily":"var(--wp--preset--font-family--rubik)","lineHeight":"1.65"},
+    "spacing":{"blockGap":"1.5rem","padding":{"left":"clamp(18px,4vw,48px)","right":"clamp(18px,4vw,48px)"}},
+    "elements": {
+      "heading":{"typography":{"fontFamily":"var(--wp--preset--font-family--rubik)","fontWeight":"700","lineHeight":"1.15"}},
+      "button":{"color":{"background":"#8E1738","text":"#FFFFFF"},"border":{"radius":"999px"},"typography":{"fontWeight":"700"}},
+      "link":{"color":{"text":"#8E1738"}}
+    }
+  }
+}
