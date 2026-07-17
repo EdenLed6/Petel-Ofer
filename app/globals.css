@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fdf9f4;
+  --color-cream-dark: #f6efe6;
+  --color-berry: #b4234b;
+  --color-berry-dark: #8e1a3b;
+  --color-berry-deep: #6d1230;
+  --color-leaf: #3e6b4a;
+  --color-leaf-dark: #2c4f36;
+  --color-ink: #2d2a26;
+  --color-sand: #e8ddcf;
+  --font-sans: var(--font-heebo), "Heebo", "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Accessibility widget modes */
+html.a11y-large-text {
+  font-size: 118%;
+}
+html.a11y-larger-text {
+  font-size: 135%;
+}
+html.a11y-high-contrast body {
+  background: #fff;
+  color: #000;
+}
+html.a11y-high-contrast .a11y-contrast-target {
+  filter: contrast(1.15);
+}
+html.a11y-underline-links a {
+  text-decoration: underline !important;
+}
+html.a11y-no-motion *,
+html.a11y-no-motion *::before,
+html.a11y-no-motion *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-berry);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  right: 16px;
+  z-index: 100;
+  background: var(--color-berry);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 0 0 12px 12px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+input, select, textarea {
+  accent-color: var(--color-berry);
+}
